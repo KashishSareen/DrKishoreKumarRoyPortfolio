@@ -1,0 +1,932 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Dr. Kishore Kumar Roy | Surgical Oncologist, Kolkata</title>
+<meta name="description" content="Dr. Kishore Kumar Roy — Surgical Oncologist, Founder of Cancer Clinic Kolkata. Fellowship in Surgical Oncology, Tata Medical Center. Care, Education, Knowledge.">
+<link rel="icon" href="assets/dr_roy_emblem.png">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,300;9..144,400;9..144,500;9..144,600;9..144,700&family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+
+<link href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.1/aos.css" rel="stylesheet">
+
+<script src="https://cdn.tailwindcss.com"></script>
+<script>
+  tailwind.config = {
+    theme: {
+      extend: {
+        colors: {
+          navy: {
+            950: '#071633',
+            900: '#0A1F4D',
+            800: '#132a5e',
+            700: '#1c3a75',
+          },
+          gold: {
+            300: '#EAC985',
+            400: '#DDAE55',
+            500: '#C9932E',
+            600: '#A8761F',
+          },
+          plum: {
+            700: '#601F79',
+            600: '#732993',
+          },
+          cream: {
+            50: '#FBF9F4',
+            100: '#F6F2E8',
+          }
+        },
+        fontFamily: {
+          display: ['Fraunces', 'serif'],
+          body: ['Inter', 'sans-serif'],
+        }
+      }
+    }
+  }
+</script>
+
+<style>
+  html { scroll-behavior: smooth; }
+  html, body { overflow-x: hidden; max-width: 100%; }
+  body { font-family: 'Inter', sans-serif; background-color: #FBF9F4; color: #1C1C1E; }
+  .font-display { font-family: 'Fraunces', serif; }
+
+  .eyebrow {
+    letter-spacing: 0.22em;
+    text-transform: uppercase;
+    font-size: 0.72rem;
+    font-weight: 600;
+  }
+
+  .nav-link {
+    position: relative;
+  }
+  .nav-link::after {
+    content: '';
+    position: absolute;
+    left: 0; bottom: -4px;
+    width: 0%;
+    height: 1px;
+    background: currentColor;
+    transition: width 0.3s ease;
+  }
+  .nav-link:hover::after { width: 100%; }
+
+  .card-lift {
+    transition: transform 0.4s cubic-bezier(.22,1,.36,1), box-shadow 0.4s ease, border-color 0.4s ease;
+  }
+  .card-lift:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 20px 40px -20px rgba(10,31,77,0.35);
+  }
+
+  ::selection { background: #C9932E; color: #071633; }
+
+  #mobile-menu {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.4s ease;
+  }
+  #mobile-menu.open { max-height: 500px; }
+
+  .ribbon-tick {
+    width: 6px; height: 6px; border-radius: 999px;
+    background: #601F79;
+    display: inline-block;
+  }
+
+  .divider-fade {
+    height: 1px;
+    background: linear-gradient(to right, transparent, rgba(201,147,46,0.6), transparent);
+  }
+</style>
+</head>
+<body class="antialiased">
+
+<!-- ============ NAV ============ -->
+<header id="site-nav" class="fixed top-0 left-0 w-full z-50 transition-all duration-500 overflow-hidden py-3">
+  <div class="max-w-7xl mx-auto px-5 sm:px-8 flex items-center justify-between h-20 transition-all duration-500" id="nav-inner">
+    <a href="#top" class="flex items-center shrink-0 bg-cream-50 rounded-xl px-3 py-2 shadow-sm">
+      <img src="/images/dr_roy_logo.jpeg" alt="Dr. Kishore Kumar Roy — Surgical Oncologist" id="nav-logo" class="h-12 sm:h-14 w-auto object-contain">
+    </a>
+
+    <nav class="hidden lg:flex items-center gap-9 font-body text-sm font-medium">
+      <a href="#top" class="nav-link" id="l0">Home</a>
+      <a href="#about" class="nav-link" id="l1">About</a>
+      <a href="#journey" class="nav-link" id="l2">Journey</a>
+      <a href="#expertise" class="nav-link" id="l3">Expertise</a>
+      <a href="#philosophy" class="nav-link" id="l4">Philosophy</a>
+      <a href="#contact" class="nav-link" id="l6">Contact</a>
+    </nav>
+
+    <a href="https://wa.me/919588562196?text=Hi%2C%20I%20want%20to%20book%20an%20appointment" target="_blank" rel="noopener" id="nav-cta" class="hidden lg:inline-flex items-center gap-2 bg-gold-500 hover:bg-gold-600 text-navy-950 font-semibold text-sm px-5 py-2.5 rounded-full transition-colors duration-300">
+      Book a Consultation
+    </a>
+
+    <button id="menu-btn" class="lg:hidden flex flex-col gap-1.5 w-8 h-8 items-end justify-center" aria-label="Toggle menu">
+      <span id="bar1" class="block h-[2px] w-7 bg-gold-500 transition-all duration-300"></span>
+      <span id="bar2" class="block h-[2px] w-5 bg-gold-500 transition-all duration-300"></span>
+      <span id="bar3" class="block h-[2px] w-7 bg-gold-500 transition-all duration-300"></span>
+    </button>
+  </div>
+
+  <div id="mobile-menu" class="lg:hidden bg-cream-50 border-t border-navy-900/10 shadow-xl">
+    <nav class="flex flex-col px-6 py-4 font-body text-navy-900">
+      <a href="#top" class="py-3 border-b border-navy-900/10">Home</a>
+      <a href="#about" class="py-3 border-b border-navy-900/10">About</a>
+      <a href="#journey" class="py-3 border-b border-navy-900/10">Journey</a>
+      <a href="#expertise" class="py-3 border-b border-navy-900/10">Expertise</a>
+      <a href="#philosophy" class="py-3 border-b border-navy-900/10">Philosophy</a>
+      <a href="#contact" class="py-3 border-b border-navy-900/10">Contact</a>
+      <a href="https://wa.me/919588562196?text=Hi%2C%20I%20want%20to%20book%20an%20appointment" target="_blank" rel="noopener" class="mt-4 text-center bg-gold-500 text-navy-950 font-semibold py-3 rounded-full">Book a Consultation</a>
+    </nav>
+  </div>
+</header>
+
+<!-- ============ HERO ============ -->
+<section id="top" class="relative bg-navy-950 text-cream-50 overflow-hidden pt-32 pb-24 lg:pt-40 lg:pb-32">
+  <!-- ambient grid -->
+  <div class="absolute inset-0 opacity-[0.06]" style="background-image: linear-gradient(#EAC985 1px, transparent 1px), linear-gradient(90deg, #EAC985 1px, transparent 1px); background-size: 64px 64px;"></div>
+
+  <div class="relative max-w-7xl mx-auto px-5 sm:px-8">
+    <div class="grid lg:grid-cols-12 gap-12 lg:gap-8 items-center">
+
+      <div class="lg:col-span-7" data-aos="fade-up" data-aos-duration="900">
+        <p class="eyebrow text-gold-400 mb-5 flex items-center gap-2">
+          <span class="ribbon-tick"></span> Founder, Cancer Clinic Kolkata
+        </p>
+
+        <div class="inline-flex items-center gap-2 bg-gold-500/12 border border-gold-400/30 rounded-full pl-2 pr-4 py-1.5 mb-6">
+          <span class="w-6 h-6 rounded-full bg-gold-500 flex items-center justify-center shrink-0">
+            <svg class="w-3.5 h-3.5 text-navy-950" fill="currentColor" viewBox="0 0 20 20"><path d="M9.05 2.72a1 1 0 011.9 0l1.36 3.14a1 1 0 00.83.6l3.42.3a1 1 0 01.57 1.75l-2.6 2.28a1 1 0 00-.32.98l.8 3.34a1 1 0 01-1.49 1.08l-2.94-1.77a1 1 0 00-1.03 0l-2.94 1.77a1 1 0 01-1.49-1.08l.8-3.34a1 1 0 00-.32-.98l-2.6-2.28a1 1 0 01.57-1.75l3.42-.3a1 1 0 00.83-.6l1.36-3.14z"/></svg>
+          </span>
+          <span class="text-sm font-semibold text-gold-300 tracking-wide">15+ Years of Surgical Oncology Experience</span>
+        </div>
+
+        <h1 class="font-display text-5xl sm:text-6xl lg:text-7xl leading-[1.05] mb-6">
+          Dr. Kishore Kumar Roy
+        </h1>
+        <p class="font-display italic text-2xl sm:text-3xl text-gold-300 mb-8">Surgical Oncologist</p>
+        <p class="text-cream-100/80 text-base sm:text-lg leading-relaxed max-w-xl mb-10">
+          MBBS, MS, FMAS &mdash; Fellowship in Surgical Oncology, Tata Medical Center, Kolkata.
+          15+ years of complex cancer surgery across Kolkata, Patna, Haryana and Gujarat,
+          bringing radical and ultra&#8209;radical cancer surgery, honest counselling, and
+          affordable comprehensive care under one roof.
+        </p>
+        <div class="flex flex-wrap gap-4">
+          <a href="https://wa.me/919588562196?text=Hi%2C%20I%20want%20to%20book%20an%20appointment" target="_blank" rel="noopener" class="bg-gold-500 hover:bg-gold-600 text-navy-950 font-semibold px-7 py-3.5 rounded-full transition-colors duration-300">
+            Book a Consultation
+          </a>
+          <a href="tel:+919588562196" class="inline-flex items-center gap-2 border border-cream-50/30 hover:border-gold-400 hover:text-gold-300 text-cream-50 px-7 py-3.5 rounded-full transition-colors duration-300">
+            Contact Us
+          </a>
+        </div>
+      </div>
+
+      <div class="lg:col-span-5 flex justify-center lg:justify-end" data-aos="fade-left" data-aos-delay="150" data-aos-duration="900">
+        <div class="relative w-64 sm:w-80">
+          <div class="absolute -inset-4 border border-gold-400/40 rounded-[2rem] pointer-events-none"></div>
+          <div class="absolute -bottom-6 -right-6 w-28 h-28 rounded-full bg-gold-500/15 -z-10"></div>
+          <img src="/images/dr_kishore_kumar_roy.jpg" alt="Dr. Kishore Kumar Roy" class="w-full aspect-[3/4] object-cover rounded-[2rem] shadow-2xl">
+        </div>
+      </div>
+    </div>
+
+    <!-- pillars strip -->
+    <div class="mt-20 grid grid-cols-3 max-w-xl gap-6 border-t border-cream-50/15 pt-8" data-aos="fade-up" data-aos-delay="200">
+      <div class="flex items-center gap-2.5">
+        <svg class="w-5 h-5 text-plum-600 shrink-0" fill="currentColor" viewBox="0 0 20 20"><path d="M10 17.35l-1.45-1.32C4.4 12.36 2 10.28 2 7.5 2 5.42 3.42 4 5.5 4c1.28 0 2.5.62 3.24 1.6h2.52C11.99 4.62 13.22 4 14.5 4 16.58 4 18 5.42 18 7.5c0 2.78-2.4 4.86-6.55 8.53L10 17.35z"/></svg>
+        <span class="text-sm text-cream-100/85 font-medium">Care</span>
+      </div>
+      <div class="flex items-center gap-2.5">
+        <svg class="w-5 h-5 text-gold-400 shrink-0" fill="none" stroke="currentColor" stroke-width="1.8" viewBox="0 0 24 24"><path d="M12 14l9-5-9-5-9 5 9 5z"/><path d="M3 9v6l9 5 9-5V9"/></svg>
+        <span class="text-sm text-cream-100/85 font-medium">Education</span>
+      </div>
+      <div class="flex items-center gap-2.5">
+        <svg class="w-5 h-5 text-gold-400 shrink-0" fill="none" stroke="currentColor" stroke-width="1.8" viewBox="0 0 24 24"><path d="M9 18h6M10 21h4M12 3a6 6 0 00-4 10.4c.6.55 1 1.4 1 2.1h6c0-.7.4-1.55 1-2.1A6 6 0 0012 3z"/></svg>
+        <span class="text-sm text-cream-100/85 font-medium">Knowledge</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ STATS BAR ============ -->
+<section class="relative bg-cream-50 px-5 sm:px-8 pb-6 sm:pb-8">
+  <div class="max-w-6xl mx-auto mt-8 sm:mt-10 lg:mt-12 relative z-20" data-aos="fade-up">
+    <div class="relative bg-navy-950 rounded-[1.75rem] sm:rounded-[2rem] shadow-2xl border border-gold-400/20 px-6 sm:px-12 py-10 sm:py-12 overflow-hidden">
+      <div class="absolute inset-0 opacity-[0.05]" style="background-image: linear-gradient(#EAC985 1px, transparent 1px), linear-gradient(90deg, #EAC985 1px, transparent 1px); background-size: 48px 48px;"></div>
+      <div class="absolute -right-16 -top-16 w-56 h-56 rounded-full bg-gold-500/10"></div>
+      <div class="absolute -left-16 -bottom-16 w-56 h-56 rounded-full bg-plum-700/10"></div>
+
+      <div class="relative grid grid-cols-2 lg:grid-cols-5 gap-y-10">
+
+        <div class="flex flex-col items-center text-center px-4 lg:border-r lg:border-cream-50/10 col-span-2 lg:col-span-1" data-aos="fade-up" data-aos-delay="0">
+          <div class="w-11 h-11 rounded-full bg-plum-700/25 flex items-center justify-center mb-4">
+            <svg class="w-5 h-5 text-plum-600" fill="currentColor" viewBox="0 0 20 20"><path d="M9.05 2.72a1 1 0 011.9 0l1.36 3.14a1 1 0 00.83.6l3.42.3a1 1 0 01.57 1.75l-2.6 2.28a1 1 0 00-.32.98l.8 3.34a1 1 0 01-1.49 1.08l-2.94-1.77a1 1 0 00-1.03 0l-2.94 1.77a1 1 0 01-1.49-1.08l.8-3.34a1 1 0 00-.32-.98l-2.6-2.28a1 1 0 01.57-1.75l3.42-.3a1 1 0 00.83-.6l1.36-3.14z"/></svg>
+          </div>
+          <p class="font-display text-4xl sm:text-5xl text-gold-300">15+</p>
+          <p class="eyebrow text-cream-100/45 mt-3 leading-relaxed">Years of<br class="sm:hidden"> Experience</p>
+        </div>
+
+        <div class="flex flex-col items-center text-center px-4 lg:border-r lg:border-cream-50/10" data-aos="fade-up" data-aos-delay="80">
+          <div class="w-11 h-11 rounded-full bg-gold-500/15 flex items-center justify-center mb-4">
+            <svg class="w-5 h-5 text-gold-400" fill="none" stroke="currentColor" stroke-width="1.7" viewBox="0 0 24 24"><path d="M9 3a3 3 0 013 3v2a3 3 0 01-3 3H7a3 3 0 01-3-3V6a3 3 0 013-3h2z"/><path d="M12 12v3a4 4 0 004 4h1a3 3 0 003-3v-1"/></svg>
+          </div>
+          <p class="font-display text-4xl sm:text-5xl text-cream-50">1000s</p>
+          <p class="eyebrow text-cream-100/45 mt-3 leading-relaxed">Major &amp;<br class="sm:hidden"> ultra-radical surgeries</p>
+        </div>
+
+        <div class="flex flex-col items-center text-center px-4 lg:border-r lg:border-cream-50/10" data-aos="fade-up" data-aos-delay="160">
+          <div class="w-11 h-11 rounded-full bg-gold-500/15 flex items-center justify-center mb-4">
+            <svg class="w-5 h-5 text-gold-400" fill="none" stroke="currentColor" stroke-width="1.7" viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M8 12l2.5 2.5L16 9"/></svg>
+          </div>
+          <p class="font-display text-4xl sm:text-5xl text-cream-50">&lt;1%</p>
+          <p class="eyebrow text-cream-100/45 mt-3 leading-relaxed">Mortality &amp;<br class="sm:hidden"> morbidity rate</p>
+        </div>
+
+        <div class="flex flex-col items-center text-center px-4 lg:border-r lg:border-cream-50/10" data-aos="fade-up" data-aos-delay="240">
+          <div class="w-11 h-11 rounded-full bg-gold-500/15 flex items-center justify-center mb-4">
+            <svg class="w-5 h-5 text-gold-400" fill="none" stroke="currentColor" stroke-width="1.7" viewBox="0 0 24 24"><path d="M3 21h18M5 21V7l7-4 7 4v14M9 21v-6h6v6"/></svg>
+          </div>
+          <p class="font-display text-4xl sm:text-5xl text-cream-50">6+</p>
+          <p class="eyebrow text-cream-100/45 mt-3 leading-relaxed">Leading cancer<br class="sm:hidden"> institutions</p>
+        </div>
+
+        <div class="flex flex-col items-center text-center px-4" data-aos="fade-up" data-aos-delay="320">
+          <div class="w-11 h-11 rounded-full bg-gold-500/15 flex items-center justify-center mb-4">
+            <svg class="w-5 h-5 text-gold-400" fill="none" stroke="currentColor" stroke-width="1.7" viewBox="0 0 24 24"><path d="M12 2l2.4 7.2H22l-6 4.4 2.3 7.2L12 16.4 5.7 20.8 8 13.6 2 9.2h7.6z"/></svg>
+          </div>
+          <p class="font-display text-4xl sm:text-5xl text-cream-50">8</p>
+          <p class="eyebrow text-cream-100/45 mt-3 leading-relaxed">Surgical oncology<br class="sm:hidden"> sub-specialities</p>
+        </div>
+
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ ABOUT ============ -->
+<section id="about" class="max-w-7xl mx-auto px-5 sm:px-8 py-24 lg:py-32">
+  <div class="text-center max-w-2xl mx-auto mb-16" data-aos="fade-up">
+    <!-- Updated Eyebrow Badge Style -->
+    <div class="mb-4">
+      <span class="inline-block bg-plum-700/10 text-plum-700 px-5 py-1.5 rounded-full text-xs font-semibold uppercase tracking-widest">
+        About the Surgeon
+      </span>
+    </div>
+    <h2 class="font-display text-4xl sm:text-5xl text-navy-950 leading-tight">About Doctor</h2>
+  </div>
+
+  <div class="grid lg:grid-cols-12 gap-14 items-center">
+    <div class="lg:col-span-4" data-aos="fade-right">
+      <div class="relative">
+        <div class="absolute -inset-3 border border-gold-500/40 rounded-2xl -z-10"></div>
+        <img src="/images/dr_kishore_kumar_roy.jpg" alt="Dr. Kishore Kumar Roy" class="w-full w-full mx-auto lg:mx-0 rounded-2xl shadow-2xl object-cover">
+      </div>
+    </div>
+
+    <div class="lg:col-span-8" data-aos="fade-up">
+      <h3 class="font-display text-3xl sm:text-4xl text-navy-950 mb-6 leading-tight">
+        Trained where India's toughest cancers are treated.
+      </h3>
+      <p class="text-navy-900/80 leading-relaxed mb-5">
+        Dr. Kishore Kumar Roy is a Surgical Oncologist &mdash; MBBS, MS, FMAS, with a Fellowship in
+        Surgical Oncology from Tata Medical Center, Kolkata. A graduate of The Medical College, Kolkata,
+        Asia's oldest medical college, he has led surgical oncology units at some of India's most
+        respected cancer hospitals across Bengal, Bihar, Haryana and Gujarat.
+      </p>
+      <p class="text-navy-900/80 leading-relaxed">
+        He now leads <span class="font-semibold text-navy-950">Cancer Clinic Kolkata</span>, built to
+        bring surgery, chemotherapy and radiotherapy guidance together, at an affordable cost, for the
+        people of Bengal, Bihar and North-East India.
+      </p>
+
+      <div class="mt-10 grid sm:grid-cols-2 gap-4">
+        <div class="flex gap-3 items-start p-4 rounded-xl bg-cream-100 border border-navy-900/5">
+          <svg class="w-5 h-5 text-gold-500 mt-0.5 shrink-0" fill="none" stroke="currentColor" stroke-width="1.8" viewBox="0 0 24 24"><path d="M12 14l9-5-9-5-9 5 9 5z"/><path d="M3 9v6l9 5 9-5V9"/></svg>
+          <div>
+            <p class="font-semibold text-navy-950 text-sm">MBBS, MS, FMAS</p>
+            <p class="text-navy-900/60 text-sm">The Medical College &amp; R.G. Kar Medical College, Kolkata</p>
+          </div>
+        </div>
+        <div class="flex gap-3 items-start p-4 rounded-xl bg-cream-100 border border-navy-900/5">
+          <svg class="w-5 h-5 text-gold-500 mt-0.5 shrink-0" fill="none" stroke="currentColor" stroke-width="1.8" viewBox="0 0 24 24"><path d="M12 2l2.4 7.2H22l-6 4.4 2.3 7.2L12 16.4 5.7 20.8 8 13.6 2 9.2h7.6z"/></svg>
+          <div>
+            <p class="font-semibold text-navy-950 text-sm">Fellowship, Surgical Oncology</p>
+            <p class="text-navy-900/60 text-sm">Tata Medical Center, Kolkata</p>
+          </div>
+        </div>
+        <div class="flex gap-3 items-start p-4 rounded-xl bg-cream-100 border border-navy-900/5">
+          <svg class="w-5 h-5 text-gold-500 mt-0.5 shrink-0" fill="none" stroke="currentColor" stroke-width="1.8" viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M8 12l2.5 2.5L16 9"/></svg>
+          <div>
+            <p class="font-semibold text-navy-950 text-sm">Fellowship, Minimal Access Surgery</p>
+            <p class="text-navy-900/60 text-sm">AMASI</p>
+          </div>
+        </div>
+        <div class="flex gap-3 items-start p-4 rounded-xl bg-cream-100 border border-navy-900/5">
+          <svg class="w-5 h-5 text-gold-500 mt-0.5 shrink-0" fill="none" stroke="currentColor" stroke-width="1.8" viewBox="0 0 24 24"><path d="M3 21h18M5 21V7l7-4 7 4v14M9 21v-6h6v6"/></svg>
+          <div>
+            <p class="font-semibold text-navy-950 text-sm">Founder</p>
+            <p class="text-navy-900/60 text-sm">Cancer Clinic Kolkata</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ JOURNEY / TIMELINE ============ -->
+<section id="journey" class="bg-navy-950 text-cream-50 py-24 lg:py-32 relative overflow-hidden">
+  <svg class="absolute -left-24 -bottom-24 w-[420px] h-[420px] opacity-[0.08] pointer-events-none" viewBox="0 0 200 200" fill="none">
+    <circle cx="100" cy="100" r="90" stroke="#EAC985" stroke-width="1"/>
+    <circle cx="100" cy="100" r="60" stroke="#EAC985" stroke-width="1"/>
+  </svg>
+  
+  <div class="max-w-5xl mx-auto px-5 sm:px-8 relative">
+    
+    <!-- Main Header with Updated Badge Pill Style -->
+    <div class="text-center max-w-2xl mx-auto mb-20" data-aos="fade-up">
+      <div class="mb-4">
+        <span class="inline-block bg-gold-500/10 text-gold-400 px-5 py-1.5 rounded-full text-xs font-semibold uppercase tracking-widest border border-gold-500/20">
+          The Career Path
+        </span>
+      </div>
+      <h2 class="font-display text-4xl sm:text-5xl leading-tight">A Journey Across India's<br> Cancer Institutions</h2>
+    </div>
+
+    <!-- Timeline Container -->
+    <div class="relative pl-8 sm:pl-10">
+      <!-- Vertical Line -->
+      <div class="absolute left-[7px] sm:left-[9px] top-2 bottom-2 w-px bg-gradient-to-b from-gold-400/70 via-gold-400/30 to-transparent"></div>
+
+      <div class="space-y-14">
+        
+        <!-- Timeline Item 1 -->
+        <div class="relative" data-aos="fade-up">
+          <span class="absolute -left-8 sm:-left-10 top-1 w-4 h-4 rounded-full bg-gold-400 ring-4 ring-navy-950"></span>
+          <p class="eyebrow text-gold-300 mb-1">Foundation</p>
+          <h3 class="font-display text-xl mb-2">The Medical College, Kolkata &amp; R.G. Kar Medical College</h3>
+          <p class="text-cream-100/70 leading-relaxed">MBBS from Asia's oldest medical college, followed by a critical-care house physician posting and six months in Paediatric Surgery &mdash; deliberate preparation for the critical care that major cancer operations demand. MS in General Surgery followed at R.G. Kar Medical College and Hospital, one of Eastern India's busiest surgical units.</p>
+        </div>
+
+        <!-- Timeline Item 2 -->
+        <div class="relative" data-aos="fade-up">
+          <span class="absolute -left-8 sm:-left-10 top-1 w-4 h-4 rounded-full bg-gold-400 ring-4 ring-navy-950"></span>
+          <p class="eyebrow text-gold-300 mb-1">Fellowship</p>
+          <h3 class="font-display text-xl mb-2">Tata Medical Center, Kolkata</h3>
+          <p class="text-cream-100/70 leading-relaxed">Selected for the Fellowship in Surgical Oncology just before completing his residency. Trained across OPD, IPD and Operation Theatre in every sub-speciality of surgical oncology under senior UK-trained faculty, and in peri-operative fluid management as a research protocol in cancer ovary patients.</p>
+        </div>
+
+        <!-- Timeline Item 3 -->
+        <div class="relative" data-aos="fade-up">
+          <span class="absolute -left-8 sm:-left-10 top-1 w-4 h-4 rounded-full bg-gold-400 ring-4 ring-navy-950"></span>
+          <p class="eyebrow text-gold-300 mb-1">Rajkot, Gujarat</p>
+          <h3 class="font-display text-xl mb-2">Consultant Surgical Oncologist, Sahyog Hospital</h3>
+          <p class="text-cream-100/70 leading-relaxed">Began independent consultant practice in a region with among the highest rates of head &amp; neck and oral cavity cancer in India, followed closely by GI cancers.</p>
+        </div>
+
+        <!-- Timeline Item 4 -->
+        <div class="relative" data-aos="fade-up">
+          <span class="absolute -left-8 sm:-left-10 top-1 w-4 h-4 rounded-full bg-gold-400 ring-4 ring-navy-950"></span>
+          <p class="eyebrow text-gold-300 mb-1">Hisar, Haryana</p>
+          <h3 class="font-display text-xl mb-2">Chief Consultant Surgical Oncologist, Sarvodaya Cancer Hospital &amp; Research Institute</h3>
+          <p class="text-cream-100/70 leading-relaxed">Worked alongside Rajasthan's senior-most Medical Oncologists, serving patients from Punjab, Haryana and Rajasthan at the first NABH-accredited cancer hospital in the region after NCR.</p>
+        </div>
+
+        <!-- Timeline Item 5 -->
+        <div class="relative" data-aos="fade-up">
+          <span class="absolute -left-8 sm:-left-10 top-1 w-4 h-4 rounded-full bg-gold-400 ring-4 ring-navy-950"></span>
+          <p class="eyebrow text-gold-300 mb-1">Panipat, Haryana</p>
+          <h3 class="font-display text-xl mb-2">Senior Consultant, Dr. Prem Cancer &amp; Superspeciality Hospital</h3>
+          <p class="text-cream-100/70 leading-relaxed">Invited to help develop a new cancer hospital from the ground up as Consultant Surgical Oncologist.</p>
+        </div>
+
+        <!-- Timeline Item 6 -->
+        <div class="relative" data-aos="fade-up">
+          <span class="absolute -left-8 sm:-left-10 top-1 w-4 h-4 rounded-full bg-gold-400 ring-4 ring-navy-950"></span>
+          <p class="eyebrow text-gold-300 mb-1">Patna, Bihar</p>
+          <h3 class="font-display text-xl mb-2">Unit Head, Mahavir Cancer Sansthan</h3>
+          <p class="text-cream-100/70 leading-relaxed">India's second-largest cancer hospital after TMH Mumbai, seeing over 2,000 OPD patients with 650 dedicated beds. Led the GI, HPB &amp; Thoracic Oncology unit for eight months, then headed Breast, Soft Tissue &amp; Ortho Oncology &mdash; performing ultra-radical surgeries and training DNB Surgical Oncology students in reconstruction.</p>
+        </div>
+
+        <!-- Timeline Item 7 -->
+        <div class="relative" data-aos="fade-up">
+          <span class="absolute -left-8 sm:-left-10 top-1 w-4 h-4 rounded-full bg-plum-700 ring-4 ring-navy-950"></span>
+          <p class="eyebrow text-gold-300 mb-1">Today &mdash; Kolkata, West Bengal</p>
+          <h3 class="font-display text-xl mb-2">Founder, Cancer Clinic Kolkata</h3>
+          <p class="text-cream-100/70 leading-relaxed">Returned to the motherland to build an economical, comprehensive cancer care project for the poor and middle-class families of Bengal, Bihar and North-East India &mdash; the road map to a larger dream of a comprehensive modern cancer hospital.</p>
+        </div>
+
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ EXPERTISE ============ -->
+<section id="expertise" class="max-w-7xl mx-auto px-5 sm:px-8 py-24 lg:py-32">
+  <div class="max-w-2xl mb-16" data-aos="fade-up">
+    <!-- Updated Eyebrow Badge Style -->
+    <div class="mb-4">
+      <span class="inline-block bg-plum-700/10 text-plum-700 px-5 py-1.5 rounded-full text-xs font-semibold uppercase tracking-widest">
+        Surgical Expertise
+      </span>
+    </div>
+    <h2 class="font-display text-4xl sm:text-5xl text-navy-950 mb-6 leading-tight">Every major cancer surgery, one surgeon.</h2>
+    <p class="text-navy-900/70 leading-relaxed">
+      Across a career of thousands of major radical and ultra-radical procedures, Dr. Roy has operated
+      across nearly every organ system affected by cancer &mdash; with documented mortality and morbidity
+      under 1%.
+    </p>
+  </div>
+
+  <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
+
+    <div class="card-lift border border-navy-900/10 rounded-2xl p-7 bg-white" data-aos="fade-up" data-aos-delay="0">
+      <div class="w-11 h-11 rounded-full bg-gold-500/15 flex items-center justify-center mb-5">
+        <svg class="w-5 h-5 text-gold-600" fill="none" stroke="currentColor" stroke-width="1.7" viewBox="0 0 24 24"><path d="M9 3a3 3 0 013 3v2a3 3 0 01-3 3H7a3 3 0 01-3-3V6a3 3 0 013-3h2z"/><path d="M12 12v3a4 4 0 004 4h1a3 3 0 003-3v-1"/></svg>
+      </div>
+      <h3 class="font-display text-xl text-navy-950 mb-3">Head &amp; Neck Cancer</h3>
+      <p class="text-sm text-navy-900/65 leading-relaxed">Commando surgery, total laryngo-pharyngectomy with reconstruction, radical neck dissection, total thyroidectomy, radical parotidectomy.</p>
+    </div>
+
+    <div class="card-lift border border-navy-900/10 rounded-2xl p-7 bg-white" data-aos="fade-up" data-aos-delay="80">
+      <div class="w-11 h-11 rounded-full bg-gold-500/15 flex items-center justify-center mb-5">
+        <svg class="w-5 h-5 text-gold-600" fill="none" stroke="currentColor" stroke-width="1.7" viewBox="0 0 24 24"><path d="M12 3c-3 3-5 6-5 9a5 5 0 0010 0c0-3-2-6-5-9z"/></svg>
+      </div>
+      <h3 class="font-display text-xl text-navy-950 mb-3">GI &amp; HPB Cancer</h3>
+      <p class="text-sm text-navy-900/65 leading-relaxed">Whipple's procedure, distal pancreatectomy with multivisceral resection, hepatic trisegmentectomy, liver segmental resections, radical cholecystectomy, radical D2 gastrectomy, 2- and 3-field esophagectomy, colo-rectal &amp; retroperitoneal surgery.</p>
+    </div>
+
+    <div class="card-lift border border-navy-900/10 rounded-2xl p-7 bg-white" data-aos="fade-up" data-aos-delay="160">
+      <div class="w-11 h-11 rounded-full bg-gold-500/15 flex items-center justify-center mb-5">
+        <svg class="w-5 h-5 text-gold-600" fill="none" stroke="currentColor" stroke-width="1.7" viewBox="0 0 24 24"><path d="M6 4v6a6 6 0 0012 0V4M6 4h12M12 16v4m-4 0h8"/></svg>
+      </div>
+      <h3 class="font-display text-xl text-navy-950 mb-3">Thoracic Cancer</h3>
+      <p class="text-sm text-navy-900/65 leading-relaxed">Lung lobectomy, pneumonectomy, chest wall tumour resection &amp; reconstruction, thymectomy, and other mediastinal tumour resections.</p>
+    </div>
+
+    <div class="card-lift border border-navy-900/10 rounded-2xl p-7 bg-white" data-aos="fade-up" data-aos-delay="0">
+      <div class="w-11 h-11 rounded-full bg-plum-700/10 flex items-center justify-center mb-5">
+        <svg class="w-5 h-5 text-plum-700" fill="currentColor" viewBox="0 0 20 20"><path d="M10 17.35l-1.45-1.32C4.4 12.36 2 10.28 2 7.5 2 5.42 3.42 4 5.5 4c1.28 0 2.5.62 3.24 1.6h2.52C11.99 4.62 13.22 4 14.5 4 16.58 4 18 5.42 18 7.5c0 2.78-2.4 4.86-6.55 8.53L10 17.35z"/></svg>
+      </div>
+      <h3 class="font-display text-xl text-navy-950 mb-3">Breast Cancer</h3>
+      <p class="text-sm text-navy-900/65 leading-relaxed">Modified radical mastectomy, breast conservative surgery with Type I &amp; II oncoplastic reconstruction, sentinel lymph node biopsy, image-guided non-palpable resection, immediate &amp; delayed reconstruction.</p>
+    </div>
+
+    <div class="card-lift border border-navy-900/10 rounded-2xl p-7 bg-white" data-aos="fade-up" data-aos-delay="80">
+      <div class="w-11 h-11 rounded-full bg-gold-500/15 flex items-center justify-center mb-5">
+        <svg class="w-5 h-5 text-gold-600" fill="none" stroke="currentColor" stroke-width="1.7" viewBox="0 0 24 24"><circle cx="12" cy="10" r="3"/><path d="M6 21c0-3.3 2.7-6 6-6s6 2.7 6 6"/></svg>
+      </div>
+      <h3 class="font-display text-xl text-navy-950 mb-3">Gynaecological Cancer</h3>
+      <p class="text-sm text-navy-900/65 leading-relaxed">Ovarian cancer primary &amp; interval cytoreduction, primary peritoneal carcinoma surgery with HIPEC, radical hysterectomy, staging laparotomy, laparoscopic radical hysterectomy.</p>
+    </div>
+
+    <div class="card-lift border border-navy-900/10 rounded-2xl p-7 bg-white" data-aos="fade-up" data-aos-delay="160">
+      <div class="w-11 h-11 rounded-full bg-gold-500/15 flex items-center justify-center mb-5">
+        <svg class="w-5 h-5 text-gold-600" fill="none" stroke="currentColor" stroke-width="1.7" viewBox="0 0 24 24"><path d="M9 4h6l1 4-4 3 4 3-1 6H9l-1-6 4-3-4-3z"/></svg>
+      </div>
+      <h3 class="font-display text-xl text-navy-950 mb-3">Urological Cancer</h3>
+      <p class="text-sm text-navy-900/65 leading-relaxed">Radical cystectomy with ileal conduit, radical &amp; partial nephrectomy, radical nephrectomy with IVC thrombectomy, radical orchidectomy, penile amputation &amp; reconstruction, groin nodal dissection.</p>
+    </div>
+
+    <div class="card-lift border border-navy-900/10 rounded-2xl p-7 bg-white sm:col-span-2 lg:col-span-1" data-aos="fade-up" data-aos-delay="0">
+      <div class="w-11 h-11 rounded-full bg-gold-500/15 flex items-center justify-center mb-5">
+        <svg class="w-5 h-5 text-gold-600" fill="none" stroke="currentColor" stroke-width="1.7" viewBox="0 0 24 24"><path d="M4 20l6-6M14 4l6 6-9 9-6-6z"/></svg>
+      </div>
+      <h3 class="font-display text-xl text-navy-950 mb-3">Soft Tissue Tumour &amp; Sarcoma</h3>
+      <p class="text-sm text-navy-900/65 leading-relaxed">Wide excision of soft tissue tumours and sarcomas with loco-regional flap reconstruction.</p>
+    </div>
+
+    <div class="card-lift border border-navy-900/10 rounded-2xl p-7 bg-white sm:col-span-2 lg:col-span-2" data-aos="fade-up" data-aos-delay="80">
+      <div class="w-11 h-11 rounded-full bg-gold-500/15 flex items-center justify-center mb-5">
+        <svg class="w-5 h-5 text-gold-600" fill="none" stroke="currentColor" stroke-width="1.7" viewBox="0 0 24 24"><path d="M12 2v20M5 8h14M5 16h14"/></svg>
+      </div>
+      <h3 class="font-display text-xl text-navy-950 mb-3">Bone Sarcoma Management</h3>
+      <p class="text-sm text-navy-900/65 leading-relaxed">Comprehensive management of bone sarcomas as part of a multi-disciplinary oncology team.</p>
+    </div>
+
+  </div>
+</section>
+
+<!-- ============ PHILOSOPHY ============ -->
+<section id="philosophy" class="bg-cream-100 py-24 lg:py-32 relative overflow-hidden">
+  <div class="max-w-7xl mx-auto px-5 sm:px-8">
+    <div class="text-center max-w-2xl mx-auto mb-16" data-aos="fade-up">
+      <!-- Updated Eyebrow Badge Style -->
+      <div class="mb-4">
+        <span class="inline-block bg-plum-700/10 text-plum-700 px-5 py-1.5 rounded-full text-xs font-semibold uppercase tracking-widest">
+          The Practice Philosophy
+        </span>
+      </div>
+      <h2 class="font-display text-4xl sm:text-5xl text-navy-950 leading-tight">Care. Education. Knowledge.</h2>
+    </div>
+
+    <div class="grid md:grid-cols-3 gap-8">
+      <div class="text-center px-6" data-aos="fade-up" data-aos-delay="0">
+        <div class="w-16 h-16 rounded-full bg-plum-700/10 flex items-center justify-center mx-auto mb-6">
+          <svg class="w-7 h-7 text-plum-700" fill="currentColor" viewBox="0 0 20 20"><path d="M10 17.35l-1.45-1.32C4.4 12.36 2 10.28 2 7.5 2 5.42 3.42 4 5.5 4c1.28 0 2.5.62 3.24 1.6h2.52C11.99 4.62 13.22 4 14.5 4 16.58 4 18 5.42 18 7.5c0 2.78-2.4 4.86-6.55 8.53L10 17.35z"/></svg>
+        </div>
+        <h3 class="font-display text-2xl text-navy-950 mb-3">Care</h3>
+        <p class="text-navy-900/65 leading-relaxed text-sm">A cancer diagnosis is frightening for a patient and their family alike. Every consultation is built around honest, compassionate counselling &mdash; especially for patients who feel demotivated or lost after diagnosis.</p>
+      </div>
+      <div class="text-center px-6" data-aos="fade-up" data-aos-delay="120">
+        <div class="w-16 h-16 rounded-full bg-gold-500/15 flex items-center justify-center mx-auto mb-6">
+          <svg class="w-7 h-7 text-gold-600" fill="none" stroke="currentColor" stroke-width="1.7" viewBox="0 0 24 24"><path d="M12 14l9-5-9-5-9 5 9 5z"/><path d="M3 9v6l9 5 9-5V9"/></svg>
+        </div>
+        <h3 class="font-display text-2xl text-navy-950 mb-3">Education</h3>
+        <p class="text-navy-900/65 leading-relaxed text-sm">Patients and families are guided clearly through every stage &mdash; diagnosis, surgery, chemotherapy and radiotherapy &mdash; so that no one wastes valuable time confused about their treatment path.</p>
+      </div>
+      <div class="text-center px-6" data-aos="fade-up" data-aos-delay="240">
+        <div class="w-16 h-16 rounded-full bg-gold-500/15 flex items-center justify-center mx-auto mb-6">
+          <svg class="w-7 h-7 text-gold-600" fill="none" stroke="currentColor" stroke-width="1.7" viewBox="0 0 24 24"><path d="M9 18h6M10 21h4M12 3a6 6 0 00-4 10.4c.6.55 1 1.4 1 2.1h6c0-.7.4-1.55 1-2.1A6 6 0 0012 3z"/></svg>
+        </div>
+        <h3 class="font-display text-2xl text-navy-950 mb-3">Knowledge</h3>
+        <p class="text-navy-900/65 leading-relaxed text-sm">Built on fellowship training at Tata Medical Center and years leading surgical oncology units, decisions are grounded in evidence-based, multi-disciplinary cancer management.</p>
+      </div>
+    </div>
+
+    <!-- Cancer Clinic Kolkata mission -->
+    <div class="mt-20 bg-navy-950 rounded-3xl px-8 py-14 sm:px-16 sm:py-16 text-center relative overflow-hidden" data-aos="zoom-in">
+      <svg class="absolute -left-10 -top-10 w-40 h-40 opacity-10" viewBox="0 0 100 100"><circle cx="50" cy="50" r="48" stroke="#EAC985" stroke-width="1" fill="none"/></svg>
+      <svg class="absolute -right-10 -bottom-10 w-40 h-40 opacity-10" viewBox="0 0 100 100"><circle cx="50" cy="50" r="48" stroke="#C9932E" stroke-width="1" fill="none"/></svg>
+      <!-- Mission Eyebrow Badge (Gold theme variant) -->
+      <div class="mb-5">
+        <span class="inline-block bg-gold-500/10 text-gold-400 px-5 py-1.5 rounded-full text-xs font-semibold uppercase tracking-widest border border-gold-500/20">
+          Cancer Clinic Kolkata
+        </span>
+      </div>
+      <p class="font-display text-2xl sm:text-3xl text-cream-50 leading-snug max-w-3xl mx-auto">
+        &ldquo;A new hope for cancer patients &mdash; where surgery and chemotherapy sit under one roof,
+        radiotherapy is arranged and guided, and comprehensive care stays within reach for the poor and
+        middle-class families of Bengal, Bihar and North-East India.&rdquo;
+      </p>
+    </div>
+  </div>
+</section>
+
+<!-- ============ TESTIMONIALS ============ -->
+<section id="testimonials" class="relative max-w-7xl mx-auto px-5 sm:px-8 py-24 lg:py-32 overflow-hidden">
+  
+  <!-- Subtle Background Glow Accents -->
+  <div class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[600px] h-[300px] bg-gold-400/10 blur-[120px] rounded-full pointer-events-none"></div>
+
+  <!-- Header Section -->
+  <div class="text-center max-w-2xl mx-auto mb-16 relative z-10" data-aos="fade-up">
+    <span class="inline-block px-3.5 py-1 text-xs font-semibold uppercase tracking-wider text-plum-700 bg-plum-700/10 rounded-full mb-3">
+      In Patients' Words
+    </span>
+    <h2 class="font-display text-4xl sm:text-5xl text-navy-950 leading-tight">Testimonials</h2>
+  </div>
+
+  <!-- Testimonial Cards Grid -->
+  <div class="grid md:grid-cols-3 gap-8 relative z-10">
+    
+    <!-- Card 1 -->
+    <div class="group relative bg-white/80 backdrop-blur-sm border border-navy-900/10 rounded-3xl p-8 shadow-sm hover:shadow-xl hover:border-gold-400/50 hover:-translate-y-2 transition-all duration-300 flex flex-col justify-between" data-aos="fade-up" data-aos-delay="0">
+      <div>
+        <!-- Top Row: Star Rating & Big Quote Icon -->
+        <div class="flex items-center justify-between mb-6">
+          <div class="flex text-gold-400 space-x-1">
+            <!-- 5 Stars -->
+            <svg class="w-5 h-5 fill-current" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
+            <svg class="w-5 h-5 fill-current" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
+            <svg class="w-5 h-5 fill-current" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
+            <svg class="w-5 h-5 fill-current" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
+            <svg class="w-5 h-5 fill-current" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
+          </div>
+          <svg class="w-8 h-8 text-navy-900/10 group-hover:text-gold-400/40 transition-colors" fill="currentColor" viewBox="0 0 32 32">
+            <path d="M10 8c-3.3 0-6 2.7-6 6v10h10V14H8c0-1.1.9-2 2-2V8zm14 0c-3.3 0-6 2.7-6 6v10h10V14h-6c0-1.1.9-2 2-2V8z"/>
+          </svg>
+        </div>
+
+        <p class="text-navy-900/80 leading-relaxed mb-8 text-sm sm:text-base">
+          "Dr. Kishore Kumar Roy offering excellent treatment with highly experienced doctors and compassionate care. Truly grateful for the dedication and support throughout the care journey."
+        </p>
+      </div>
+
+      <!-- Author Footer -->
+      <div class="flex items-center gap-4 pt-6 border-t border-navy-900/5">
+        <div class="w-11 h-11 rounded-full bg-navy-950 text-gold-400 flex items-center justify-center font-bold text-sm shrink-0 ring-2 ring-gold-400/20">
+          RG
+        </div>
+        <div>
+          <h4 class="font-semibold text-navy-950 text-sm">Ravi Gupta</h4>
+         
+        </div>
+      </div>
+    </div>
+
+    <!-- Card 2 -->
+    <div class="group relative bg-white/80 backdrop-blur-sm border border-navy-900/10 rounded-3xl p-8 shadow-sm hover:shadow-xl hover:border-gold-400/50 hover:-translate-y-2 transition-all duration-300 flex flex-col justify-between" data-aos="fade-up" data-aos-delay="100">
+      <div>
+        <!-- Top Row: Star Rating & Big Quote Icon -->
+        <div class="flex items-center justify-between mb-6">
+          <div class="flex text-gold-400 space-x-1">
+            <svg class="w-5 h-5 fill-current" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
+            <svg class="w-5 h-5 fill-current" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
+            <svg class="w-5 h-5 fill-current" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
+            <svg class="w-5 h-5 fill-current" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
+            <svg class="w-5 h-5 fill-current" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
+          </div>
+          <svg class="w-8 h-8 text-navy-900/10 group-hover:text-gold-400/40 transition-colors" fill="currentColor" viewBox="0 0 32 32">
+            <path d="M10 8c-3.3 0-6 2.7-6 6v10h10V14H8c0-1.1.9-2 2-2V8zm14 0c-3.3 0-6 2.7-6 6v10h10V14h-6c0-1.1.9-2 2-2V8z"/>
+          </svg>
+        </div>
+
+        <p class="text-navy-900/80 leading-relaxed mb-8 text-sm sm:text-base">
+          "Dr. Roy's expertise in gastrointestinal oncology is unmatched. He explained every step of the treatment clearly and the entire staff was warm and professional. I felt in the best hands possible."
+        </p>
+      </div>
+
+      <!-- Author Footer -->
+      <div class="flex items-center gap-4 pt-6 border-t border-navy-900/5">
+        <div class="w-11 h-11 rounded-full bg-navy-950 text-gold-400 flex items-center justify-center font-bold text-sm shrink-0 ring-2 ring-gold-400/20">
+          SC
+        </div>
+        <div>
+          <h4 class="font-semibold text-navy-950 text-sm">Sourav Chatterjee</h4>
+         
+        </div>
+      </div>
+    </div>
+
+    <!-- Card 3 -->
+    <div class="group relative bg-white/80 backdrop-blur-sm border border-navy-900/10 rounded-3xl p-8 shadow-sm hover:shadow-xl hover:border-gold-400/50 hover:-translate-y-2 transition-all duration-300 flex flex-col justify-between" data-aos="fade-up" data-aos-delay="200">
+      <div>
+        <!-- Top Row: Star Rating & Big Quote Icon -->
+        <div class="flex items-center justify-between mb-6">
+          <div class="flex text-gold-400 space-x-1">
+            <svg class="w-5 h-5 fill-current" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
+            <svg class="w-5 h-5 fill-current" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
+            <svg class="w-5 h-5 fill-current" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
+            <svg class="w-5 h-5 fill-current" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
+            <svg class="w-5 h-5 fill-current" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
+          </div>
+          <svg class="w-8 h-8 text-navy-900/10 group-hover:text-gold-400/40 transition-colors" fill="currentColor" viewBox="0 0 32 32">
+            <path d="M10 8c-3.3 0-6 2.7-6 6v10h10V14H8c0-1.1.9-2 2-2V8zm14 0c-3.3 0-6 2.7-6 6v10h10V14h-6c0-1.1.9-2 2-2V8z"/>
+          </svg>
+        </div>
+
+        <p class="text-navy-900/80 leading-relaxed mb-8 text-sm sm:text-base">
+          "I am deeply grateful to Dr. Kishore Kumar Roy and his team for their outstanding treatment and guidance. The doctors are highly experienced, and the staff is kind and attentive."
+        </p>
+      </div>
+
+      <!-- Author Footer -->
+      <div class="flex items-center gap-4 pt-6 border-t border-navy-900/5">
+        <div class="w-11 h-11 rounded-full bg-navy-950 text-gold-400 flex items-center justify-center font-bold text-sm shrink-0 ring-2 ring-gold-400/20">
+          ND
+        </div>
+        <div>
+          <h4 class="font-semibold text-navy-950 text-sm">Neha Das</h4>
+         
+        </div>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<!-- ============ CONTACT ============ -->
+<section id="contact" class="bg-navy-950 text-cream-50 py-24 lg:py-32 relative overflow-hidden">
+  <svg class="absolute right-0 top-0 w-72 h-72 opacity-[0.06] pointer-events-none" viewBox="0 0 100 100"><circle cx="50" cy="50" r="48" stroke="#EAC985" stroke-width="0.6" fill="none"/><circle cx="50" cy="50" r="34" stroke="#EAC985" stroke-width="0.6" fill="none"/></svg>
+
+  <div class="max-w-7xl mx-auto px-5 sm:px-8 relative">
+    <div class="grid lg:grid-cols-2 gap-16">
+      <div data-aos="fade-right">
+        
+      
+        <div class="mb-4">
+          <span class="inline-block px-4 py-1.5 rounded-full bg-gold-500/10 text-gold-400 text-xs font-semibold tracking-wider uppercase">
+            Get in Touch
+          </span>
+        </div>
+
+        <h2 class="font-display text-4xl sm:text-5xl mb-6 leading-tight">Book a Consultation</h2>
+        <p class="text-cream-100/70 leading-relaxed mb-10 max-w-md">
+          For appointments, second opinions, or urgent queries, reach the clinic directly by phone,
+          WhatsApp or email. Every enquiry is treated in confidence.
+        </p>
+
+        <div class="space-y-5">
+          <a href="tel:+919588562196" class="flex items-center gap-4 group">
+            <span class="w-11 h-11 rounded-full bg-gold-500/15 flex items-center justify-center shrink-0 group-hover:bg-gold-500/25 transition-colors">
+              <svg class="w-5 h-5 text-gold-400" fill="none" stroke="currentColor" stroke-width="1.8" viewBox="0 0 24 24"><path d="M3 5a2 2 0 012-2h2.28a1 1 0 01.98.8l.9 4.5a1 1 0 01-.5 1.08L7 10.5a11 11 0 006.5 6.5l1.12-1.66a1 1 0 011.08-.5l4.5.9a1 1 0 01.8.98V19a2 2 0 01-2 2h-1C10.6 21 3 13.4 3 4V5z"/></svg>
+            </span>
+            <span>
+              <span class="block text-xs text-cream-100/50">Mobile &amp; WhatsApp</span>
+              <span class="block text-lg">95885 62196 &nbsp;/&nbsp; 91422 39820</span>
+            </span>
+          </a>
+          <a href="mailto:drkishore@cancerclinickolkata.com" class="flex items-center gap-4 group">
+            <span class="w-11 h-11 rounded-full bg-gold-500/15 flex items-center justify-center shrink-0 group-hover:bg-gold-500/25 transition-colors">
+              <svg class="w-5 h-5 text-gold-400" fill="none" stroke="currentColor" stroke-width="1.8" viewBox="0 0 24 24"><path d="M3 6h18v12H3z"/><path d="M3 6l9 7 9-7"/></svg>
+            </span>
+            <span>
+              <span class="block text-xs text-cream-100/50">Email</span>
+              <span class="block text-lg">drkishore@cancerclinickolkata.com</span>
+            </span>
+          </a>
+          <a href="https://www.cancerclinickolkata.com" target="_blank" rel="noopener" class="flex items-center gap-4 group">
+            <span class="w-11 h-11 rounded-full bg-gold-500/15 flex items-center justify-center shrink-0 group-hover:bg-gold-500/25 transition-colors">
+              <svg class="w-5 h-5 text-gold-400" fill="none" stroke="currentColor" stroke-width="1.8" viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M3 12h18M12 3a14 14 0 010 18M12 3a14 14 0 000 18"/></svg>
+            </span>
+            <span>
+              <span class="block text-xs text-cream-100/50">Clinic</span>
+              <span class="block text-lg">Cancer Clinic Kolkata</span>
+            </span>
+          </a>
+          <div class="flex items-center gap-4">
+            <span class="w-11 h-11 rounded-full bg-gold-500/15 flex items-center justify-center shrink-0">
+              <svg class="w-5 h-5 text-gold-400" fill="none" stroke="currentColor" stroke-width="1.8" viewBox="0 0 24 24"><path d="M12 21s-7-6.2-7-11a7 7 0 0114 0c0 4.8-7 11-7 11z"/><circle cx="12" cy="10" r="2.5"/></svg>
+            </span>
+            <span>
+              <span class="block text-xs text-cream-100/50 mb-1">Clinic Address</span>
+              <span class="block text-sm md:text-base text-white leading-6">
+                6TH FLOOR, 610, PS ABACUS, NH 12, opposite DECATHLON,<br />
+                near City Centre 2, Diplomatic Enclave, Action Area IIE,<br />
+                Reckjoani, Kolkata, West Bengal 700161
+              </span>
+            </span>
+          </div>
+        </div>
+      </div>
+
+      <div data-aos="fade-left" class="bg-cream-50 rounded-3xl p-8 sm:p-10 text-navy-950">
+        <h3 class="font-display text-2xl mb-6">Request an Appointment</h3>
+        <!-- Form Tag (Original labels unchanged) -->
+        <form id="appointment-form" autocomplete="off" class="space-y-4">
+          <div>
+            <label class="block text-xs eyebrow text-navy-900/50 mb-2">Full Name</label>
+            <input type="text" autocomplete="off" placeholder="Your name" class="w-full px-4 py-3 rounded-lg border border-navy-900/15 bg-white focus:outline-none focus:ring-2 focus:ring-gold-500 text-sm">
+          </div>
+          <div>
+            <label class="block text-xs eyebrow text-navy-900/50 mb-2">Phone Number</label>
+            <input type="tel" autocomplete="off" placeholder="+91XXXXXXXXXX" class="w-full px-4 py-3 rounded-lg border border-navy-900/15 bg-white focus:outline-none focus:ring-2 focus:ring-gold-500 text-sm">
+          </div>
+          <div>
+            <label class="block text-xs eyebrow text-navy-900/50 mb-2">Reason for Visit</label>
+            <textarea rows="3" placeholder="Briefly describe your concern" class="w-full px-4 py-3 rounded-lg border border-navy-900/15 bg-white focus:outline-none focus:ring-2 focus:ring-gold-500 text-sm resize-none"></textarea>
+          </div>
+          
+          <a href="/form/appointment-form" class="block w-full">
+            <button type="button" class="w-full bg-gold-500 hover:bg-gold-600 text-navy-950 font-semibold py-3.5 rounded-full transition-colors duration-300">
+              Book an Appointment
+            </button>
+          </a>
+        </form>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ FOOTER ============ -->
+<footer class="bg-navy-900 pt-16 pb-16 sm:pb-10 relative overflow-hidden">
+  <svg class="absolute -right-20 -top-20 w-72 h-72 opacity-[0.05] pointer-events-none" viewBox="0 0 100 100"><circle cx="50" cy="50" r="48" stroke="#EAC985" stroke-width="0.6" fill="none"/><circle cx="50" cy="50" r="34" stroke="#EAC985" stroke-width="0.6" fill="none"/></svg>
+
+  <div class="max-w-7xl mx-auto px-5 sm:px-8 relative">
+    <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-12 lg:gap-8">
+
+      <!-- Column 1: Logo + blurb -->
+      <div>
+        <img src="/images/dr_roy_logo.jpeg" alt="Dr. Kishore Kumar Roy — Surgical Oncologist" class="h-16 w-auto object-contain bg-cream-50 rounded-xl px-4 py-2.5 mb-6">
+        <p class="text-cream-100/55 text-sm leading-relaxed max-w-xs">
+          Surgical Oncologist with 15+ years of experience in radical and ultra-radical cancer
+          surgery, and Founder of Cancer Clinic Kolkata &mdash; bringing affordable, comprehensive
+          cancer care to Bengal, Bihar and North-East India.
+        </p>
+      </div>
+
+      <!-- Column 2: Quick links -->
+      <div>
+        <p class="eyebrow text-gold-400 mb-6">Quick Links</p>
+        <nav class="flex flex-col gap-3 text-sm">
+          <a href="#top" class="text-cream-100/60 hover:text-gold-300 transition-colors w-fit">Home</a>
+          <a href="#about" class="text-cream-100/60 hover:text-gold-300 transition-colors w-fit">About</a>
+          <a href="#journey" class="text-cream-100/60 hover:text-gold-300 transition-colors w-fit">Journey</a>
+          <a href="#expertise" class="text-cream-100/60 hover:text-gold-300 transition-colors w-fit">Expertise</a>
+          <a href="#philosophy" class="text-cream-100/60 hover:text-gold-300 transition-colors w-fit">Philosophy</a>
+          <a href="#contact" class="text-cream-100/60 hover:text-gold-300 transition-colors w-fit">Contact</a>
+        </nav>
+      </div>
+
+      <!-- Column 3: Contact + social -->
+      <div>
+        <p class="eyebrow text-gold-400 mb-6">Get in Touch</p>
+        <div class="flex flex-col gap-3 text-sm mb-7">
+          <a href="tel:+919588562196" class="text-cream-100/60 hover:text-gold-300 transition-colors w-fit">95885 62196 / 91422 39820</a>
+          <a href="mailto:drkishore@cancerclinickolkata.com" class="text-cream-100/60 hover:text-gold-300 transition-colors w-fit break-all">drkishore@cancerclinickolkata.com</a>
+          <a href="https://www.cancerclinickolkata.com" target="_blank" rel="noopener" class="text-cream-100/60 hover:text-gold-300 transition-colors w-fit">www.cancerclinickolkata.com</a>
+        </div>
+        
+        <p class="eyebrow text-gold-400 mb-4">Follow</p>
+        <div class="flex items-center gap-3">
+          
+          <!-- LinkedIn Icon -->
+          <a href="https://www.linkedin.com/in/kishore-kumar-roy-940a84129/" target="_blank" rel="noopener" aria-label="LinkedIn" class="w-9 h-9 rounded-full bg-cream-50/10 hover:bg-gold-500 flex items-center justify-center transition-colors group">
+            <svg class="w-4 h-4 fill-current text-cream-100/70 group-hover:text-navy-950" viewBox="0 0 24 24">
+              <path d="M19 3a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h14m-.5 15.5v-5.3a3.26 3.26 0 0 0-3.26-3.26c-.85 0-1.84.52-2.28 1.3v-1.11h-2.79v8.37h2.79v-4.93c0-.77.62-1.4 1.39-1.4a1.4 1.4 0 0 1 1.4 1.4v4.93h2.75M6.46 10.9v8.37H9.25V10.9H6.46M7.86 6.78a1.62 1.62 0 1 0 0 3.24 1.62 1.62 0 0 0 0-3.24z"/>
+            </svg>
+          </a>
+
+          <!-- Instagram Icon -->
+          <a href="https://www.instagram.com/drkishore09/" target="_blank" rel="noopener" aria-label="Instagram" class="w-9 h-9 rounded-full bg-cream-50/10 hover:bg-gold-500 flex items-center justify-center transition-colors group">
+            <svg class="w-4 h-4 text-cream-100/70 group-hover:text-navy-950" fill="none" stroke="currentColor" stroke-width="1.8" viewBox="0 0 24 24">
+              <rect x="3" y="3" width="18" height="18" rx="5"/>
+              <circle cx="12" cy="12" r="4"/>
+              <circle cx="17.5" cy="6.5" r="1"/>
+            </svg>
+          </a>
+
+          <!-- YouTube Icon -->
+          <a href="https://www.youtube.com/@KnowYourHealth-DrKKRoy" target="_blank" rel="noopener" aria-label="YouTube" class="w-9 h-9 rounded-full bg-cream-50/10 hover:bg-gold-500 flex items-center justify-center transition-colors group">
+            <svg class="w-4 h-4 fill-current text-cream-100/70 group-hover:text-navy-950" viewBox="0 0 24 24">
+              <path d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"/>
+            </svg>
+          </a>
+
+         
+
+        </div>
+      </div>
+
+    </div>
+
+    <div class="divider-fade w-full mt-14 mb-8"></div>
+
+    <div class="flex flex-col sm:flex-row items-center justify-between gap-3 text-cream-100/50 text-xs text-center">
+      <p>&copy; <span id="year"></span> Dr. Kishore Kumar Roy &mdash; Cancer Clinic Kolkata</p>
+      <p>Care &middot; Education &middot; Knowledge</p>
+    </div>
+  </div>
+</footer>
+
+<!-- Floating WhatsApp -->
+<a href="https://wa.me/919588562196?text=Hey%2C%20I%20want%20to%20book%20an%20appointment" target="_blank" rel="noopener" class="fixed bottom-6 right-6 z-50 w-14 h-14 rounded-full bg-[#25D366] flex items-center justify-center shadow-2xl hover:scale-110 transition-transform">
+  <svg class="w-7 h-7 text-white" fill="currentColor" viewBox="0 0 32 32"><path d="M16 3C9 3 3.2 8.8 3.2 15.8c0 2.5.7 4.9 2 7L3 29l6.4-2.1c2 1.1 4.3 1.7 6.6 1.7 7 0 12.8-5.8 12.8-12.8S23 3 16 3zm0 23.3c-2.1 0-4.1-.6-5.9-1.6l-.4-.2-4.3 1.4 1.4-4.2-.3-.4a10.4 10.4 0 01-1.7-5.6C4.8 9.9 9.8 4.9 16 4.9S27.2 9.9 27.2 15.8 22.2 26.3 16 26.3zm5.9-7.8c-.3-.2-1.9-.9-2.2-1s-.5-.2-.8.2-.9 1-1.1 1.3-.4.3-.7.1a8.6 8.6 0 01-4.3-3.8c-.3-.5.3-.5.9-1.6.1-.2 0-.4 0-.5s-.8-1.9-1-2.6c-.3-.7-.5-.6-.8-.6h-.6c-.2 0-.6.1-.9.4-.3.4-1.2 1.2-1.2 2.9s1.2 3.3 1.4 3.6c.2.2 2.4 3.7 5.9 5.1.8.3 1.5.5 2 .7.8.3 1.6.2 2.2.1.7-.1 2-.8 2.3-1.6.3-.8.3-1.4.2-1.6-.1-.1-.3-.2-.6-.4z"/></svg>
+</a>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.1/aos.js"></script>
+<script>
+  AOS.init({ duration: 800, once: true, offset: 60, easing: 'ease-out-cubic' });
+
+  document.getElementById('year').textContent = new Date().getFullYear();
+
+  // Nav scroll behaviour
+  const nav = document.getElementById('site-nav');
+  const navInner = document.getElementById('nav-inner');
+  const navLinks = ['l0','l1','l2','l3','l4','l6'].map(id => document.getElementById(id));
+  const menuBtn = document.getElementById('menu-btn');
+  const mobileMenu = document.getElementById('mobile-menu');
+  const bars = [document.getElementById('bar1'), document.getElementById('bar2'), document.getElementById('bar3')];
+
+  function setNavState(scrolled){
+    if(scrolled){
+      nav.classList.add('bg-cream-50/95','backdrop-blur','shadow-md');
+      navInner.classList.add('h-16');
+      navInner.classList.remove('h-20');
+      navLinks.forEach(l => { l.classList.remove('text-cream-50'); l.classList.add('text-navy-900'); });
+    } else {
+      nav.classList.remove('bg-cream-50/95','backdrop-blur','shadow-md');
+      navInner.classList.remove('h-16');
+      navInner.classList.add('h-20');
+      navLinks.forEach(l => { l.classList.add('text-cream-50'); l.classList.remove('text-navy-900'); });
+    }
+  }
+  setNavState(false);
+
+  function closeMobileMenu(){
+    mobileMenu.classList.remove('open');
+  }
+
+  window.addEventListener('scroll', () => {
+    setNavState(window.scrollY > 40);
+    // close mobile nav on scroll
+    if(mobileMenu.classList.contains('open')){
+      closeMobileMenu();
+    }
+  }, { passive: true });
+
+  menuBtn.addEventListener('click', () => {
+    mobileMenu.classList.toggle('open');
+  });
+
+  mobileMenu.querySelectorAll('a').forEach(a => {
+    a.addEventListener('click', closeMobileMenu);
+  });
+
+  // Reset form on page show (to clear data when navigating back)
+  window.addEventListener('pageshow', function (event) {
+   
+    const appointmentForm = document.querySelector('form');
+    if (appointmentForm) {
+      appointmentForm.reset(); 
+    }
+  });
+</script>
+</body>
+</html>
